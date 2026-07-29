@@ -1,8 +1,13 @@
 aid: ironplanet
 name: IronPlanet
-description: 'IronPlanet is a company surfaced as a portfolio company of accel, kleiner-perkins and added
-  to the API Evangelist network as a stub for enrichment. Sector: ecommerce. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'IronPlanet is an online marketplace for buying and selling used heavy construction equipment
+  and trucks across categories including construction, trucks, agriculture, mining, forestry, and oil and
+  gas. The platform offers online auctions, buy-now listings, make-an-offer, sealed auctions, and on-site
+  auctions, with detailed third-party inspection reports backed by its IronClad Assurance certification
+  program. IronPlanet operates regional marketplaces for North America, Europe/Middle East, and Asia-Pacific
+  and is part of the Ritchie Bros. (RB Global) family of businesses. This company was surfaced as a
+  portfolio company of accel and kleiner-perkins and added to the API Evangelist network for enrichment;
+  no public developer API surface was found during enrichment.'
 url: https://raw.githubusercontent.com/api-evangelist/ironplanet/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +16,30 @@ x-backed-by:
 - kleiner-perkins
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://www.ironplanet.com/n_images/logo.png
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Ecommerce
+- Marketplace
+- Heavy Equipment
+- Auctions
+- Used Equipment
+- Construction
+- Ritchie Bros
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,4 +48,25 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: http://www.ironplanet.com
+  url: https://www.ironplanet.com
+- type: About
+  url: https://www.ironplanet.com/about-us
+- type: Support
+  url: https://www.ironplanet.com/contact-us
+- type: GettingStarted
+  url: https://www.ironplanet.com/how-to-buy
+- type: TermsOfService
+  url: https://www.ironplanet.com/pop/terms_page.jsp?noh1=yes
+- type: PrivacyPolicy
+  url: https://rbglobal.com/privacy-statement/
+- type: Blog
+  url: https://blog.rbauction.com
+- type: DomainSecurity
+  url: security/ironplanet-domain-security.yml
+- type: WellKnown
+  url: well-known/ironplanet-well-known.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

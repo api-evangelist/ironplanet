@@ -1,0 +1,23 @@
+generated: '2026-07-19'
+method: probed
+source: live probes of /.well-known/* on www.ironplanet.com
+host: www.ironplanet.com
+endpoints:
+- path: /.well-known/security.txt
+  status: 404
+  file: null
+- path: /.well-known/openid-configuration
+  status: 404
+  file: null
+- path: /.well-known/oauth-authorization-server
+  status: 404
+  file: null
+- path: /.well-known/api-catalog
+  status: 200
+  file: null
+  note: soft-404 — returns the site product-search HTML page, not a real API catalog document
+- path: /.well-known/ai-plugin.json
+  status: 404
+  file: null
+result: none
+notes: No real .well-known documents are published. api-catalog returns HTTP 200 but is a soft-404 rendering the storefront search page.
